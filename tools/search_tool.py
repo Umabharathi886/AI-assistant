@@ -30,4 +30,4 @@ def wikipedia_search(query: str) -> str:
         return f"Wikipedia search failed: {e}"
 
 
-RESEARCH_TOOLS = [web_search, wikipedia_search]
+RESEARCH_TOOLS = [web_search]

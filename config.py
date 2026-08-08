@@ -3,9 +3,11 @@ Central configuration for the Enterprise Operations AI Assistant.
 Loads environment variables and exposes shared paths / constants used
 across agents, tools, memory, and the knowledge base.
 """
+
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import streamlit as st
 
 load_dotenv()
 
@@ -27,13 +29,26 @@ DATA_DIR.mkdir(parents=True, exist_ok=True)
 # LLM / API config
 # ---------------------------------------------------------------------------
 # LLM_PROVIDER: "groq" (free, default) or "openai" (paid)
-LLM_PROVIDER = os.getenv("LLM_PROVIDER", "groq").lower()
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+# ---------------------------------------------------------------------------
+# LLM / API config
+# ---------------------------------------------------------------------------
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+def get_secret(name, default=""):
+    """Read from Streamlit Secrets when available, otherwise use environment variables."""
+    try:
+        return st.secrets.get(name, os.getenv(name, default))
+    except Exception:
+        return os.getenv(name, default)
+
+
+LLM_PROVIDER = get_secret("LLM_PROVIDER", "groq").lower()
+
+GROQ_API_KEY = get_secret("GROQ_API_KEY", "")
+GROQ_MODEL = get_secret("GROQ_MODEL", "llama-3.3-70b-versatile")
+
+OPENAI_API_KEY = get_secret("OPENAI_API_KEY", "")
+OPENAI_MODEL = get_secret("OPENAI_MODEL", "gpt-4o-mini")
 
 # ---------------------------------------------------------------------------
 # Embeddings config (ChromaDB) — local, free, no API key required

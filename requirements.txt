@@ -24,6 +24,7 @@ langchain-groq>=0.2.0
 # --- Free local embeddings (default) ---
 langchain-huggingface>=0.1.0
 sentence-transformers>=3.0.0
+duckduckgo-search
 
 # --- Optional: only needed if LLM_PROVIDER=openai or EMBEDDING_PROVIDER=openai ---
 # langchain-openai>=0.2.0

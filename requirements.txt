@@ -1,0 +1,32 @@
+streamlit>=1.37.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-chroma>=0.1.4
+chromadb>=0.5.5
+pydantic>=2.7.0
+python-dotenv>=1.0.1
+pypdf>=4.2.0
+wikipedia>=1.4.0
+duckduckgo-search>=6.2.0
+google-api-python-client>=2.137.0
+google-auth-httplib2>=0.2.0
+google-auth-oauthlib>=1.2.0
+pandas>=2.2.0
+tabulate>=0.9.0
+reportlab>=4.2.0
+tiktoken>=0.7.0
+langchain-experimental>=0.3.0
+
+# --- Free LLM provider (default) ---
+langchain-groq>=0.2.0
+
+# --- Free local embeddings (default) ---
+langchain-huggingface>=0.1.0
+sentence-transformers>=3.0.0
+
+# --- Optional: only needed if LLM_PROVIDER=openai or EMBEDDING_PROVIDER=openai ---
+# langchain-openai>=0.2.0
+
+# --- Optional: only needed for live Gmail send/read (GMAIL_ENABLED=true) ---
+# langchain-google-community>=2.0.0

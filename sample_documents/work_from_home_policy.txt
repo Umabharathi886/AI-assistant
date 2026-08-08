@@ -1,0 +1,29 @@
+NovaTech Solutions Pvt. Ltd. — Work From Home (WFH) Policy
+
+1. Eligibility
+All full-time employees who have completed their 3-month probation
+period are eligible to work from home, subject to manager approval and
+role suitability (client-facing/on-site roles may have restrictions).
+
+2. WFH Allowance
+Employees may work from home up to 8 days per month. Additional WFH
+days require prior written approval from the department head.
+
+3. Equipment & Connectivity
+Employees must have a stable internet connection (minimum 20 Mbps) and
+use company-issued or approved equipment with VPN access enabled for
+all work-related activity.
+
+4. Availability
+WFH employees must remain reachable during core hours (10:00 AM –
+4:00 PM) via Slack/Teams and attend all scheduled meetings on video.
+
+5. Full Remote Arrangements
+Permanent full-remote arrangements are evaluated case-by-case by HR
+and the relevant department head, typically for specialized roles or
+approved relocation situations.
+
+6. Data Security
+Employees working remotely must follow the IT Security SOP, including
+locking devices when unattended and never using public Wi-Fi for
+sensitive company data without VPN.

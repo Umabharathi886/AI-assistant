@@ -1,0 +1,11 @@
+venv/
+__pycache__/
+*.pyc
+.env
+data/chroma_db/
+data/memory.db
+data/uploads/
+data/gmail_credentials.json
+data/gmail_token.json
+data/gdrive_credentials.json
+.streamlit/secrets.toml
